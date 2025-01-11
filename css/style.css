@@ -1,0 +1,406 @@
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+.main-color{
+  color: #0078ff;
+}
+
+/* --------------------NAV--------------------------------------- */
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  background-color: white !important;
+  left: 0;
+  bottom: -5;
+  height: 3px;
+  width: 0;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+nav ul li a:hover::before {
+  width: 90%;
+}
+
+body:has(#home:target) .nav-link-home::before {
+  width: 90%;
+}
+body:has(#about:target) .nav-link-about::before {
+  width: 90%;
+}
+body:has(#services:target) .nav-link-services::before {
+  width: 90%;
+}
+body:has(#Portfolio:target) .nav-link-work::before {
+  width: 90%;
+}
+body:has(#blogs:target) .nav-link-blog::before {
+  width: 90%;
+}
+body:has(#contact:target) .nav-link-contact::before {
+  width: 90%;
+}
+
+
+/* ---------------------------------------------- */
+
+
+.dropdown:hover>.dropdown-menu, 
+.dropend:hover>.dropdown-menu {
+  display: block;
+  margin-top: .1em;
+  margin-left: .1em;
+}
+@media screen and (min-width:769px) {
+  .dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: .5em;
+  }
+}
+
+/* -----------------------Main------------------------------------ */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/img/hero-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.animation::after {
+  content: "";
+  animation: anime 10s infinite;
+  font-size: 2.5rem;
+}
+.header-title
+{
+  font-size: 64px ;
+}
+
+@keyframes anime {
+  0% {
+    content: "D|";
+  }
+  2% {
+    content: "De";
+  }
+  4% {
+    content: "Dev|";
+  }
+  6% {
+    content: "Deve";
+  }
+  8% {
+    content: "Devel";
+  }
+  10% {
+    content: "Develo";
+  }
+  12% {
+    content: "Develop|";
+  }
+  14% {
+    content: "Develope";
+  }
+  16% {
+    content: "Developer|";
+  }
+  18% {
+    content: "Developer|";
+  }
+  25% {
+    content: "Develope";
+  }
+  27% {
+    content: "Develop";
+  }
+  29% {
+    content: "Develo|";
+  }
+  30% {
+    content: "Devel";
+  }
+  32% {
+    content: "Dev";
+  }
+  34% {
+    content: "De|";
+  }
+  36% {
+    content: "Des";
+  }
+  38% {
+    content: "Desi";
+  }
+  40% {
+    content: "Desig|";
+  }
+  42% {
+    content: "Design";
+  }
+  44% {
+    content: "Designe";
+  }
+  50% {
+    content: "Designer|";
+  }
+  52% {
+    content: "Designe";
+  }
+  54% {
+    content: "Design";
+  }
+  56% {
+    content: "Desig|";
+  }
+  58% {
+    content: "Desi";
+  }
+  60% {
+    content: "Des";
+  }
+  62% {
+    content: "De|";
+  }
+  64% {
+    content: "D";
+  }
+  68% {
+    content: "F|";
+  }
+
+  70% {
+    content: "Fr";
+  }
+
+  72% {
+    content: "Fre";
+  }
+
+  74% {
+    content: "Free|";
+  }
+
+  76% {
+    content: "Freel";
+  }
+
+  78% {
+    content: "Freela";
+  }
+
+  80% {
+    content: "Freelan|";
+  }
+  82% {
+    content: "Freelanc";
+  }
+  84% {
+    content: "Freelance|";
+  }
+  90% {
+    content: "Freelance|";
+  }
+  92% {
+    content: "Freelanc|";
+  }
+  94% {
+    content: "Freelan";
+  }
+  95% {
+    content: "Freela";
+  }
+  96% {
+    content: "Freel|";
+  }
+  97% {
+    content: "Free";
+  }
+  98% {
+    content: "Fr";
+  }
+  99% {
+    content: "F|";
+  }
+  100% {
+    content: "";
+  }
+}
+/* ----------------------------------------------------------- */
+
+/* ----------------------about-------------------------------- */
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: #0d6efd;
+  bottom: -10px;
+}
+.head {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.decoration::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ----------------------------------------------------------- */
+
+/* -------------------------services--------------------------- */
+
+.ser-icon {
+  transition: all 0.5s;
+}
+.ser-icon i {
+  transition: all 0.5s;
+}
+.ser-card:hover .ser-icon {
+  background-color: #0078ff;
+  border: #b4cde9 5px solid !important;
+}
+.ser-card:hover i {
+  color: white;
+  transition: all 0.5s;
+}
+
+/* ---------------------------------------------------------------------------------- */
+#statistics {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/img/post-3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 128px 0px;
+  color: white;
+}
+
+/* ----------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------- */
+.border-main{
+  border-color: #0078ff !important ;
+}
+.poftolio-img{
+  overflow: hidden;
+  
+}
+.poftolio-img img{
+  transition: all .5s;
+
+}
+.model-card:hover .poftolio-img img{
+  
+  transform: scale(1.3);
+}
+.modal-dialog{
+  --bs-modal-width: 50%;
+   border: none;
+    top: 15%; 
+}
+
+/* ----------------------------------------------------------- */
+
+#revwis {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/img/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+  padding: 128px 0px;
+  color: white;
+}
+.card-title {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-title:hover {
+  color: #0078ff;
+}
+
+.autor {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.autor:hover {
+  color: #0d6efd;
+}
+/* ----------------------------------------------------------- */
+
+/* ---------------------contact---------------------------------- */
+
+#contact {
+  margin-top: 100px;
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../images/img/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+  padding: 250px 0 50;
+  color: white;
+}
+.head-title {
+  color: black;
+  padding: 50px 0;
+  font-size: 64px;
+}
+.head-title h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.head-title::before {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 100px;
+  height: 4px;
+  border-radius: 50px;
+  top: 65%;
+}
+input {
+  outline: none;
+}
+.social-icons {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.social-icons:hover {
+  background-color: #0078ff;
+  color: white;
+  border: #91b8e4;
+}
+
+/* ----------------------------------------------------------- */
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}

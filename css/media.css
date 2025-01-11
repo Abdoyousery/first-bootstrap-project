@@ -1,0 +1,44 @@
+@media screen and (max-width: 991px) {
+  header {
+    background-attachment: scroll;
+  }
+  .header-title
+  {
+    margin: auto;
+    width: 60%;
+    font-size: 48px ;
+    margin-bottom: 20px;
+
+  }
+  .animation::after{
+    font-size: 32px;
+  }
+  /* ======================================= */
+  #statistics {
+    background-attachment: scroll;
+  }
+  
+#revwis {
+   
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  #contact {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  
+  }
+  .modal-dialog{
+    max-width: 100%; 
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .modal-dialog{
+    max-width:80%; 
+    margin: auto;
+  }
+}
